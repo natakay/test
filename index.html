@@ -113,6 +113,44 @@
         Леса, недавно столь густые,<br>
         И берег, милый для меня.
     </p>
+    <!--форма (оформление формы)-->
+    <form action="" method="get">
+        <h2>Форма регистрации</h2>
+        <p>Введите логин <input type="text" name="login" required autofocus placeholder="введите логин"></p>
+        <!--placeholder - подсказка для заполнения-->
+        <!--required (обязательное поле для заполнения)-->
+        <p>Введите пароль <input type="password" name="password" required></p>
+        <h3>Ваши интересы</h3>
+        <!--чек боксы-->
+        <ul style="list-style: none;"><!--style=list-style: none убирает точку в списке-->
+            <li><input type="checkbox" name="interes" value="music">музыка</li>
+            <li><input type="checkbox" name="interes" value="sport">спорт</li>
+            <li><input type="checkbox" name="interes" value="programming" checked>программирование</li>
+            <!--checked - автомотическая галочка-->
+        </ul>
+        <!--alt+shift+стрелкавниз, копирование строчки-->
+        <h3>Способ оплаты</h3>
+        <label><input type="radio" name="pay" value="visa">visa</label><br>
+        <input type="radio" name="master card" id="master card">
+        <label for="master card">master card</label><br>
+        <input type="radio" name="mir" checked disabled> mir<br><!--checked и disabled выбирают только один вариант-->
+
+        <div>
+            <h3>Страна проживания</h3>
+            <select multiple name="country" size="2">
+                <option value="" disabled selected>Выберете страну</option>
+                <option value="russia"> Россия</option>
+                <option value="armenia"> Армения</option>
+                <option value="belarus"> Белорусь</option>
+            </select>
+        </div>
+        <br>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Введите комментарий"></textarea>
+        <br>
+        <!--закрывающий тег "textarea" не преносить на другую строчку, текст ареа я вляется строчным элементом-->
+        <button type="reset"> Очистить</button>
+        <input type="submit" value="Отправить">
+    </form>
 </body>
 
 </html>
