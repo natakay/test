@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head> <!--открытие скобок шифт+Х(русская)-->
+
+<body>
+    <p><a href="index.html">На главную</a></p>
+    <table><!--border - для примера (так не делаем)-->
+        <caption>Пример</caption>
+
+        <tr>
+            <th>Номер п/п</th>
+            <th>Наименование товара</th>
+            <th>Стоимость</th>
+            <th>Валюта</th>
+        </tr>
+
+
+        <tr>
+            <td>1</td>
+            <td>Помидоры</td>
+            <td>50</td>
+            <td rowspan="3">руб.</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Огурцы</td>
+            <td>60</td>
+        </tr>
+
+
+        <tr>
+            <td colspan="2">Итого</td>
+            <td>110</td>
+        </tr>
+
+    </table>
+    <P>
+    <table>
+        <caption>Автомобили</caption>
+        <tr>
+            <th>Номер п/п</th>
+            <th>Марка</th>
+            <th>Модель</th>
+            <th>Стоимость руб.</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td rowspan="3">Тойота</td>
+            <td>Corolla</td>
+            <td>1900000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Camry</td>
+            <td>2400000</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>RAV4</td>
+            <td>2600000</td>
+        </tr>
+        <tr>
+            <td colspan="3">Итого</td>
+            <td>6900000</td>
+        </tr>
+    </table>
+    </P>
+
+</body>
+
+</html>
